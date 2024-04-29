@@ -17,7 +17,7 @@ private:
 	int elements, current;
 	int getPosition(const T& key);
 public:
-
+	bool Includes(const Map<T, T2>& map);
 	void Set(T key, T2 value);
 	Map();
 	bool Get(const T& key, T2& value);
@@ -37,6 +37,14 @@ inline int Map<T, T2>::getPosition(const T& key)
 		if (v[i].key == key)
 			return i;
 	return -1;
+}
+
+template<typename T, typename T2>
+inline bool Map<T, T2>::Includes(const Map<T, T2>& map)
+{
+	for (auto &[key, value, index] : map) 
+		if (this->getPosition(key) == -1) return false;
+	return true;
 }
 
 template<typename T, typename T2>
