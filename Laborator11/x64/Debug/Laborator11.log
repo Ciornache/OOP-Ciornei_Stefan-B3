@@ -1,0 +1,3 @@
+﻿  Zoo.cpp
+F:\General Info\Semestrul2\OOP\Laborator11\Zoo.cpp(56,21): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  Laborator11.vcxproj -> F:\General Info\Semestrul2\OOP\Laborator11\x64\Debug\Laborator11.exe
